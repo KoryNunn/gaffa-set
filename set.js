@@ -1,20 +1,23 @@
-var Gaffa = require('gaffa'),
-    actionType = "set";
+var Gaffa = require('gaffa');
 
 function Set(){}
 Set = Gaffa.createSpec(Set, Gaffa.Action);
-Set.prototype.type = actionType;
+Set.prototype._type = 'set';
 Set.prototype.trigger = function(){
 
     var fromObj = this.source.value;
-    if(!(this.clone && this.clone.value === false)){
+    if(!this.clone.value){
         fromObj = this.gaffa.clone(fromObj);
     }
-    this.target.set(fromObj, this.cleans.value ? false : null);
+    this.target.set(fromObj, this.cleans.value);
 };
 Set.prototype.target = new Gaffa.Property();
 Set.prototype.source = new Gaffa.Property();
-Set.prototype.clone = new Gaffa.Property();
-Set.prototype.cleans = new Gaffa.Property();
+Set.prototype.clone = new Gaffa.Property({
+    value: true
+});
+Set.prototype.cleans = new Gaffa.Property({
+    value: true
+});
 
 module.exports = Set;
