@@ -9,7 +9,7 @@ Set.prototype.trigger = function(){
     if(!this.clone.value){
         fromObj = this.gaffa.clone(fromObj);
     }
-    this.target.set(fromObj, this.cleans.value);
+    this.target.set(fromObj, !this.cleans.value);
 };
 Set.prototype.target = new Gaffa.Property();
 Set.prototype.source = new Gaffa.Property();
@@ -17,7 +17,7 @@ Set.prototype.clone = new Gaffa.Property({
     value: true
 });
 Set.prototype.cleans = new Gaffa.Property({
-    value: true
+    value: false
 });
 
 module.exports = Set;
