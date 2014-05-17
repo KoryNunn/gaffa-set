@@ -1,7 +1,7 @@
 {
   "name": "gaffa-set",
   "author": "Kory Nunn <knunn187@gmail.com>",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "main": "set.js",
   "repository": {
     "type": "git",
