@@ -18,13 +18,9 @@
   "peerDependencies": {
     "gaffa": "^1.4.3"
   },
-<<<<<<< HEAD
   "license": "BSD",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "description": "set view for gaffa"
-=======
-  "license": "MIT"
->>>>>>> 561e3ee0a7aed185cc3c0102c9668db38045cb3b
 }
