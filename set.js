@@ -7,7 +7,7 @@ Set.prototype.type = actionType;
 Set.prototype.trigger = function(){
 
     var fromObj = this.source.value;
-    if(!(this.clone && this.clone.value === false)){
+    if(this.clone.value){
         fromObj = this.gaffa.clone(fromObj);
     }
     this.target.set(fromObj, this.cleans.value ? false : null);
