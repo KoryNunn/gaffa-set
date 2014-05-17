@@ -32,10 +32,10 @@ The data to set
 
 The location to set the data
 
-### clone (get)
+### clone (get) default: false
 
 Whether to clone the value or not. Set this to true if you dont want to pass objects by reference.
 
-### cleans (get)
+### cleans (get) default: false
 
 Whether to mark the target model location as clean.

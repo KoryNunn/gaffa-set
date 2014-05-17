@@ -1,7 +1,7 @@
 {
   "name": "gaffa-set",
   "author": "Kory Nunn <knunn187@gmail.com>",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "main": "set.js",
   "repository": {
     "type": "git",
@@ -16,11 +16,15 @@
     "action"
   ],
   "peerDependencies": {
-    "gaffa": "^1.0.0"
+    "gaffa": "^1.4.3"
   },
+<<<<<<< HEAD
   "license": "BSD",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "description": "set view for gaffa"
+=======
+  "license": "MIT"
+>>>>>>> 561e3ee0a7aed185cc3c0102c9668db38045cb3b
 }
