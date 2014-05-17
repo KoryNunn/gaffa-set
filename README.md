@@ -1,7 +1,6 @@
-gaffa-set
-============
+# gaffa-set
 
-set view for gaffa
+Set action for [gaffa](https://github.com/gaffa-tape/gaffa-js). Set a value into the model.
 
 ## Install:
 

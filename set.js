@@ -1,9 +1,8 @@
-var Gaffa = require('gaffa'),
-    actionType = "set";
+var Gaffa = require('gaffa');
 
 function Set(){}
 Set = Gaffa.createSpec(Set, Gaffa.Action);
-Set.prototype.type = actionType;
+Set.prototype._type = 'set';
 Set.prototype.trigger = function(){
 
     var fromObj = this.source.value;
