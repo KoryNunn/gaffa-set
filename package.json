@@ -5,7 +5,7 @@
   "main": "set.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KoryNunn/gaffa-set.git"
+    "url": "git+https://github.com/KoryNunn/gaffa-set.git"
   },
   "bugs": {
     "url": "https://github.com/KoryNunn/gaffa-set/issues"
@@ -22,5 +22,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "description": "set view for gaffa"
+  "description": "set view for gaffa",
+  "homepage": "https://github.com/KoryNunn/gaffa-set#readme"
 }
